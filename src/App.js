@@ -16,8 +16,12 @@ const App = () => {
   ])
 
   const handleGamePlay = (clickSquare) => {
-    alert(clickSquare)
+    let updateBoard = [...board]
+    updateBoard[clickSquare]="😛"
+    setBoard(updateBoard)
   }
+
+
 
   return (
     <>
